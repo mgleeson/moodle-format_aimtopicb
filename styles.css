@@ -1,0 +1,85 @@
+/* ADDED */
+
+/* Course header */
+body.format-aimtopicb:not([class*=" cmid-"]) .page-header-headings {
+    display: none;
+}
+body.format-aimtopicb #course-header {
+    width: 100%;
+}
+body.format-aimtopicb div#course-header > div#course-header-banner {
+    background-size: cover;
+}
+body.format-aimtopicb div#course-header > div#course-header-banner > div#course-header-banner-text {
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.5);
+}
+body.format-aimtopicb div#course-header > p#course-header-banner_attribution {
+    text-align: right;
+    margin: 0;
+    font-size: xx-small;
+}
+
+/* Tabs */
+body.format-aimtopicb .course-content ul.nav-tabs li a div.tab_content.marker::before {
+    content: "";
+    border-left: solid 3px #0f6cbf;
+    padding-right: 5px;
+}
+body.format-aimtopicb .course-content ul.nav-tabs li a div.tab_content.dimmed {
+    color: #6a737b;
+}
+body.format-aimtopicb .course-content ul.nav-tabs li a.draggable {
+    cursor: move;
+}
+body.format-aimtopicb.dragging.dir-ltr .course-content ul.nav-tabs li.drop-before,
+body.format-aimtopicb.dragging.dir-rtl .course-content ul.nav-tabs li.drop-after {
+    border-left: 1px solid #212529;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+body.format-aimtopicb.dragging.dir-ltr .course-content ul.nav-tabs li.drop-after,
+body.format-aimtopicb.dragging.dir-rtl .course-content ul.nav-tabs li.drop-before {
+    border-right: 1px solid #212529;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Section */
+body.format-aimtopicb ul.sections li.section .sectionname .inplaceeditable {
+    display: inline;
+}
+body.format-aimtopicb ul.sections li.section .course-section-header .section_subtitle {
+    font-size: small;
+}
+body.format-aimtopicb ul.sections li.section .summarytext .section_image_holder {
+    float: right;
+    width: 240px;
+    text-align: right;
+    font-size: xx-small;
+}
+body.format-aimtopicb ul.sections li.section .summarytext .section_image_holder img {
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Section Anchor Jump Fix */
+body.format-aimtopicb ul.sections li.section .course-section-header .sectionname {
+    scroll-margin-top: 70px;
+}
+
+/* Hide activity navigation */
+body.format-aimtopicb.path-mod.pagelayout-incourse #page #page-content .activity-navigation {
+    display: none;
+}
+
+/* Course Index */
+body.format-aimtopicb .courseindex .courseindex-section.dropready .courseindex-item-content {
+    padding-bottom: 0;
+}
+body.format-aimtopicb.editing .courseindex .courseindex-section.dropready .courseindex-item-content .courseindex-sectioncontent {
+    padding-bottom: 1em;
+}
+
+/* END ADDED */
