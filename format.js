@@ -158,23 +158,26 @@ M.course.format.fmtWarnMaxsections = function(e) {
     return true;
 };
 
-// JB EDIT BEGIN 18-10-2020
+/**
+ * Add SF Dashboard link.
+ * @param {string} link_href
+ * @param {string} link_text
+ */
 M.course.format.addLink = {
-	init: function() {
-    var newlink = document.createElement("a");
-    var newItem = document.createElement("li");               
-    var list = document.getElementsByClassName("nav nav-tabs mb-3")[0];
-    newlink.textContent = "Dashboard";
-    newlink.setAttribute('href', "https://my.aim.com.au/PortalLanding?brand=aim&tab=Learn");
-    newItem.appendChild(newlink);
-    list.insertBefore(newItem, list.childNodes[0]); 
-    newItem.classList.add("nav-item");
-    newlink.classList.add("backtodash");
-    newlink.classList.add("nav-link")
-    newlink.classList.add("myaim-sf");
-  }
+    init: function (Y, link_href, link_text) {
+        var newlink = document.createElement("a");
+        var newItem = document.createElement("li");
+        var list = document.getElementsByClassName("nav nav-tabs mb-3")[0];
+        newlink.textContent = link_text;
+        newlink.setAttribute('href', link_href);
+        newItem.appendChild(newlink);
+        list.insertBefore(newItem, list.childNodes[0]);
+        newItem.classList.add("nav-item");
+        newlink.classList.add("backtodash");
+        newlink.classList.add("nav-link");
+        newItem.classList.add("myaim-sf");
+    }
 };
-// JB EDIT END 18-10-2020
 
 /**
  * Initialise: Watch for user input.

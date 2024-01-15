@@ -104,4 +104,8 @@ $string['weeks_mindays'] = 'First week minimum days of year';
 $string['weeks_mindays_desc'] = 'The first week of the year contains a minimum of how many days of the year?';
 $string['weeks_partial'] = 'Partial weeks';
 $string['weeks_partial_desc'] = 'Whether there are partial weeks at the start and end of the year.';
+$string['link_href'] = 'Link URL';
+$string['link_href_desc'] = 'The URL to link to when the user clicks on the SF dashboard link - by default the PROD SF dashboard for MyAIM.';
+$string['link_text'] = 'Link text';
+$string['link_text_desc'] = 'The text to display for the SF dashboard link - by default this is "Dashboard".';
 // END ADDED.

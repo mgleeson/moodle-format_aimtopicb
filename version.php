@@ -26,8 +26,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2023051701;          // The current plugin version (Date: YYYYMMDDXX). (NOTE: This instance of AIMTopicB is forked from MultiTopic Course Format, version 2023051701, release v4.2.1)
+$plugin->version =  2024011601;          // The current plugin version (Date: YYYYMMDDXX). (NOTE: This instance of AIMTopicB is forked from MultiTopic Course Format, version 2023051701, release v4.2.1)
 $plugin->requires = 2022041900;         // Requires this Moodle version.
 $plugin->component = 'format_aimtopicb';    // Full name of the plugin (used for diagnostics). // CHANGED: format name.
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = 'v4.2.1';
+$plugin->release = 'v4.2.2';
