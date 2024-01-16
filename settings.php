@@ -55,4 +55,18 @@ if ($ADMIN->fulltree) {
         0
     ));
 
+    $settings->add(new admin_setting_configtext(
+        'format_aimtopicb/link_href',
+        new lang_string('link_href',    'format_aimtopicb'),
+        new lang_string('link_href_desc', 'format_aimtopicb'),
+        'https://my.aim.com.au/PortalLanding?brand=aim&tab=Learn'
+    ));
+
+    $settings->add(new admin_setting_configtext(
+        'format_aimtopicb/link_text',
+        get_string('link_text', 'format_aimtopicb'),
+        get_string('link_text_desc', 'format_aimtopicb'),
+        'Dashboard'
+    ));
+
 }

@@ -61,8 +61,7 @@ echo $renderer->render($widget);
 $courseformat = course_get_format($course);
 $maxsections = $courseformat->get_max_sections();
 $maxsections = get_string('maxsectionslimit', 'core', $maxsections);
-//JB EDIT BEGIN 18-10-2020
-$PAGE->requires->js_init_call('M.course.format.addLink.init');
-// JB EDIT END 18-10-2020
+
 $PAGE->requires->js('/course/format/aimtopicb/format.js');
+$PAGE->requires->js_init_call('M.course.format.addLink.init', ['link_href' => get_config('format_aimtopicb','link_href'), 'link_text' => get_config('format_aimtopicb','link_text')], true);
 $PAGE->requires->js_init_call('M.course.format.fmtInit', ['max' => $maxsections], true);
